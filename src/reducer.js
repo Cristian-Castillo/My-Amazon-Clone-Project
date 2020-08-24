@@ -1,11 +1,5 @@
 export const initialState = {
-    basket:[{
-        id:'123413525',
-        title:'Mechanical Keyboard',
-        price:11.96,
-        rating:5,
-        image:'https://images-na.ssl-images-amazon.com/images/I/71cngLX2xuL._AC_SL1500_.jpg'
-    }],
+    basket:[],
     user:null,
 
 };
@@ -16,6 +10,11 @@ basket?.reduce((amount,item) => item.price + amount,0);
 const reducer = (state,action) => {
 
     switch(action.type){
+        case 'SET_USER':
+            return {
+                ...state,
+                user:action.user,
+            };
         case 'ADD_TO_BASKET':
         return{
             ...state,
