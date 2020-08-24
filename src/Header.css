@@ -2,15 +2,30 @@
     background-color:#131921;
     display:flex;
     align-items:center;
+    position: sticky;
+    top:0;
+    z-index:100;
 }
-/* Amazon logo on navbar img */
-/* object-fit, always keep img eg amazon brand aspect ratio to be the same! */
+/* Amazon logo on navbar img 
+object-fit, always keep img e.g. 
+amazon brand aspect ratio to 
+be the same! */
 .header__logo{
     width:100px;
     object-fit:contain;
     margin-left:20px;
     margin-right:20px;
     margin-top:18px;
+}
+
+.header__basketCount{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.header__optionBasket{
+    display:flex;
+    align-items:center;
 }
 
 .header__optionLineOne{
