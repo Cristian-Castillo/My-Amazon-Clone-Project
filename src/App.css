@@ -1,0 +1,4 @@
+/* Removes hidden spacing on web browser that defaults spacing */
+* {
+  margin: 0;
+}
